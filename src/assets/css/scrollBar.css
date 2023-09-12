@@ -1,0 +1,14 @@
+/* Oculta a barra de rolagem padrão do navegador */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #17181C; /* Cor de fundo da trilha */
+}
+
+/* Estiliza o polegar (a parte da barra de rolagem que você arrasta) */
+::-webkit-scrollbar-thumb {
+  background-color: #363636; /* Cor do polegar */
+  border-radius: 0.25rem;  /* Borda arredondada do polegar */
+}

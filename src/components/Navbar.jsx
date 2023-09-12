@@ -31,7 +31,7 @@ const Navbar = () => {
 
       <div className="text-[#EBEBEA] flex justify-center items-center pr-4 gap-5 max-md:hidden">
         <div className="flex w-14 h-12 rounded-md items-center justify-center bg-[#2E2F33]">
-          <img src={giftBox} alt="gift box" width={26} className="" />
+          <img src={giftBox} alt="gift box" width={26} className="cursor-pointer" />
         </div>
         <button className="font-bold">Login</button>
         <button className="w-24 h-14 bg-[#CA58FE] rounded-2xl font-semibold border-4 border-[#8532ac]">
