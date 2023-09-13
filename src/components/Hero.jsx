@@ -147,7 +147,7 @@ const Hero = () => {
           <p className="font-semibold text-xl mb-4">
             Complete your profile, get your Bonus Credit
           </p>
-          <button className="w-[110px] h-11 rounded-lg bg-[#4AD14E] font-semibold">
+          <button className="w-[110px] h-11 rounded-lg bg-[#4AD14E] font-semibold mt-8">
             Take Bonus
           </button>
           <div className="h-16 w-[500px] rounded-2xl border border-[#CA58FE] mt-20">
