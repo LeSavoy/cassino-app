@@ -7,18 +7,23 @@ import { MdStars } from "react-icons/md";
 import { BsChatLeftDotsFill } from "react-icons/bs";
 import { BiSolidDuplicate, BiSupport } from "react-icons/bi";
 import { FaHandsHelping } from "react-icons/fa";
-import { TbWorld } from "react-icons/tb"
-import { BsFillMoonFill } from "react-icons/bs"
-import { SiAdguard } from "react-icons/si"
- 
+import { TbWorld } from "react-icons/tb";
+import { BsFillMoonFill } from "react-icons/bs";
+import { SiAdguard } from "react-icons/si";
+import { MdSavedSearch } from "react-icons/md";
+import { AiOutlineSend } from "react-icons/ai";
+
 import bonus from "../assets/img/bonus.png";
 import roleta from "../assets/img/roleta.png";
 import slotMachine from "../assets/img/slot-machine.png";
 import crown from "../assets/img/crown.png";
+import angel from "../assets/img/angel.png";
+
+import "../assets/css/gradientText.css";
 
 const Hero = () => {
   return (
-    <main className="text-white mt-10">
+    <main className="text-white mt-10 flex">
       <aside className="flex flex-col w-60 h-full border-r-[1px] border-gray-700">
         <div className="flex justify-end h-12 items-center mr-[26px]">
           <IoIosArrowBack />
@@ -104,24 +109,24 @@ const Hero = () => {
           <FaHandsHelping size={20} className="ml-2" />
           <span>Sponsorship</span>
         </div>
-        
+
         <div className="flex items-center h-12 mr-4 ml-4 gap-2">
           <BiSupport size={20} className="ml-2" />
           <span>Support</span>
         </div>
-        
+
         <div className="flex items-center h-12 mr-4 ml-4 gap-2 mt-48 mb-2">
           <div className="w-full bg-[#2E2F33] mt-4 rounded flex items-center h-12 gap-2">
-            <TbWorld size={15} className="ml-2"/>
+            <TbWorld size={15} className="ml-2" />
             <span className="text-sm cursor-pointer">English</span>
             <IoIosArrowForward size={12} className="rotate-90 cursor-pointer" />
           </div>
 
           <div className="w-full bg-[#2E2F33] mt-4 rounded flex items-center h-12 gap-2 justify-center ">
             <div className="w-14 h-8 bg-[#CA58FE] flex justify-end items-center rounded-3xl pr-1 cursor-pointer">
-            <div className="w-7 h-7 rounded-full bg-[#2e2f33d2] flex items-center justify-center"> 
-              <BsFillMoonFill />
-            </div>
+              <div className="w-7 h-7 rounded-full bg-[#2e2f33d2] flex items-center justify-center">
+                <BsFillMoonFill />
+              </div>
             </div>
           </div>
         </div>
@@ -132,11 +137,37 @@ const Hero = () => {
         </div>
       </aside>
 
-      <div>
+      <div className="ml-20 flex w-screen justify-center">
+        <div className="mt-10">
+          <p className="text-[#4AD14E] font-bold mb-4">VIP Bonus</p>
+          <h1 className="text-4xl font-bold mb-4">Get € 3,000 bonus</h1>
+          <p className="text-[#CA58FE] font-bold text-4xl mb-4">
+            NOW! &#128525;
+          </p>
+          <p className="font-semibold text-xl mb-4">
+            Complete your profile, get your Bonus Credit
+          </p>
+          <button className="w-[110px] h-11 rounded-lg bg-[#4AD14E] font-semibold">
+            Take Bonus
+          </button>
+          <div className="h-16 w-[500px] rounded-2xl border border-[#CA58FE] mt-20">
+            <div className=" flex items-center h-full justify-center">
+              <MdSavedSearch size={40} className="text-cyan-400" />
+              <span className="pr-20 gradient-text font-bold text-lg">Ask from AI</span>
+              <input
+                type="text"
+                placeholder="Search best games..."
+                className="bg-[#2E2F33] pr-18 mr-12 p-1.5 rounded-xl border-2 border-transparent focus:border-gray-700 outline-none"
+              />
+              <div className="">
+                <AiOutlineSend size={20} className="mr-1 cursor-pointer"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div>
-          <p>VIP Bonus</p>
-          <h1>Get € 3,000 bonus</h1>
-          <p>NOW! &#128525;</p>
+          <img src={angel} width={450} alt="angel" className="" />
         </div>
       </div>
     </main>
